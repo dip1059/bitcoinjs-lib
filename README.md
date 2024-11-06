@@ -1,5 +1,5 @@
-# Note: 
-This package is cloned from https://github.com/junderw/bitcoinjs-lib/tree/cashv5 and customised for adding some other btc based network support like bitcoin cash, dashcoin, dogecoin, litecoin and others. This is basically bitcoinjs-lib v5 mod package
+# Warning: 
+This package is cloned from https://github.com/junderw/bitcoinjs-lib/tree/cashv5 and customised for adding some other btc based network support like bitcoin cash, dashcoin, dogecoin, litecoin and others. This is basically bitcoinjs-lib cashv5 mod. Use it at your own risk.
 
 # BitcoinJS (bitcoinjs-lib)
 [![Build Status](https://travis-ci.org/bitcoinjs/bitcoinjs-lib.png?branch=master)](https://travis-ci.org/bitcoinjs/bitcoinjs-lib)

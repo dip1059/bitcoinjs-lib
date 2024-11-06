@@ -160,13 +160,13 @@ export class TransactionBuilder {
     this.__TX = new Transaction();
     this.__TX.version = 2;
     this.__USE_LOW_R = false;
-    console.warn(
-      'Deprecation Warning: TransactionBuilder will be removed in the future. ' +
-        '(v6.x.x or later) Please use the Psbt class instead. Examples of usage ' +
-        'are available in the transactions-psbt.js integration test file on our ' +
-        'Github. A high level explanation is available in the psbt.ts and psbt.js ' +
-        'files as well.',
-    );
+    // console.warn(
+    //   'Deprecation Warning: TransactionBuilder will be removed in the future. ' +
+    //     '(v6.x.x or later) Please use the Psbt class instead. Examples of usage ' +
+    //     'are available in the transactions-psbt.js integration test file on our ' +
+    //     'Github. A high level explanation is available in the psbt.ts and psbt.js ' +
+    //     'files as well.',
+    // );
   }
 
   enableBitcoinCash(enable?: boolean): void {
@@ -464,7 +464,16 @@ export class TransactionBuilder {
     const fee = incoming - outgoing;
     const feeRate = fee / bytes;
 
-    return feeRate > this.maximumFeeRate;
+    const res = feeRate > this.maximumFeeRate;
+    if (res) {
+      console.log(`tx bytes: ${bytes}`);
+      console.log(`in amount: ${incoming}`);
+      console.log(`out amount: ${outgoing}`);
+      console.log(`fee: ${fee}`);
+      console.log(`feeRate: ${feeRate}`);
+      console.log(`maximumFeeRate: ${this.maximumFeeRate}`);
+    }
+    return res;
   }
 }
 
@@ -1295,10 +1304,10 @@ function getSigningData(
 ): SigningData {
   let vin: number;
   if (typeof signParams === 'number') {
-    console.warn(
-      'DEPRECATED: TransactionBuilder sign method arguments ' +
-        'will change in v6, please use the TxbSignArg interface',
-    );
+    // console.warn(
+    //   'DEPRECATED: TransactionBuilder sign method arguments ' +
+    //     'will change in v6, please use the TxbSignArg interface',
+    // );
     vin = signParams;
   } else if (typeof signParams === 'object') {
     checkSignArgs(inputs, signParams);

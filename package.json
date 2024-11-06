@@ -1,7 +1,7 @@
 {
   "name": "bitcoinjs-lib",
   "version": "1.0.0",
-  "description": "Client-side Bitcoin JavaScript library",
+  "description": "bitcoinjs-lib with some other btc based network support. Cloned from https://github.com/junderw/bitcoinjs-lib/tree/cashv5",
   "main": "./src/index.js",
   "types": "./types/index.d.ts",
   "engines": {
@@ -12,7 +12,13 @@
     "bitcoin",
     "browserify",
     "javascript",
-    "bitcoinjs"
+    "bitcoinjs",
+    "bitcoincash",
+    "litecoin",
+    "dogecoin",
+    "dashcoin",
+    "btcbasednetwork",
+    "btcforkednetwork"
   ],
   "scripts": {
     "build": "npm run clean && tsc -p ./tsconfig.json && npm run formatjs",
@@ -42,7 +48,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bitcoinjs/bitcoinjs-lib.git"
+    "url": "https://github.com/dip1059/bitcoinjs-lib.git"
   },
   "files": [
     "src",
@@ -51,7 +57,7 @@
   "dependencies": {
     "bech32": "^1.1.2",
     "big-integer": "^1.6.44",
-    "bip174": "^2.0.1",
+    "bip174": "2.1.0",
     "bip32": "^2.0.4",
     "bip66": "^1.1.0",
     "bitcoin-ops": "^1.4.0",
