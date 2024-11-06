@@ -1,3 +1,6 @@
+# Note: 
+This package is cloned from https://github.com/junderw/bitcoinjs-lib/tree/cashv5 and customised for adding some other btc based network support like bitcoin cash, dashcoin, dogecoin, litecoin and others. This is basically bitcoinjs-lib v5 mod package
+
 # BitcoinJS (bitcoinjs-lib)
 [![Build Status](https://travis-ci.org/bitcoinjs/bitcoinjs-lib.png?branch=master)](https://travis-ci.org/bitcoinjs/bitcoinjs-lib)
 [![NPM](https://img.shields.io/npm/v/bitcoinjs-lib.svg)](https://www.npmjs.org/package/bitcoinjs-lib)
@@ -33,7 +36,11 @@ Presently,  we do not have any formal documentation other than our [examples](#e
 
 ## Installation
 ``` bash
-npm install bitcoinjs-lib
+npm install @dip1059/bitcoinjs-lib
+
+or
+
+yarn add @dip1059/bitcoinjs-lib
 ```
 
 Typically we support the [Node Maintenance LTS version](https://github.com/nodejs/Release).
