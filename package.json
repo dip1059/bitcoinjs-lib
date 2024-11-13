@@ -1,9 +1,13 @@
 {
-  "name": "bitcoinjs-lib",
+  "name": "@dip1059/bitcoinjs-lib",
   "version": "1.0.0",
   "description": "bitcoinjs-lib with some other btc based network support. Cloned from https://github.com/junderw/bitcoinjs-lib/tree/cashv5",
   "main": "./src/index.js",
   "types": "./types/index.d.ts",
+  "author": "Dipankar Saha <dipankarsaha1059@gmail.com>",
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=8.0.0"
   },
@@ -95,5 +99,5 @@
     "tslint": "^5.20.1",
     "typescript": "3.2.2"
   },
-  "license": "MIT"
+  "license": "Unknown"
 }
