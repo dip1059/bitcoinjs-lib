@@ -1,6 +1,6 @@
 {
   "name": "@dip1059/bitcoinjs-lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "bitcoinjs-lib with some other btc based network support. Cloned from https://github.com/junderw/bitcoinjs-lib/tree/cashv5",
   "main": "./src/index.js",
   "types": "./types/index.d.ts",

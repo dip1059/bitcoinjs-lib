@@ -126,12 +126,12 @@ export const litetest: Network = {
   messagePrefix: '\x19Litecoin Signed Message:\n',
   bech32: 'tltc',
   bip32: {
-    public: 0x019da462,
-    private: 0x019d9cfe,
+    public: 0x043587cf,
+    private: 0x04358394,
   },
-  pubKeyHash: 0x30,
-  scriptHash: 0x32,
-  wif: 0xb0,
+  pubKeyHash: 0x6f,
+  scriptHash: 0x3a,
+  wif: 0xef,
 };
 
 export const litemain: Network = {
